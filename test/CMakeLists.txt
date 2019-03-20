@@ -5,6 +5,7 @@ file(GLOB TEST_SOURCES "./*.cpp")
 add_executable(tests "${TEST_SOURCES}")
 target_compile_features(tests PRIVATE cxx_std_14)
 target_link_libraries(tests PUBLIC Catch2::Catch2)
+target_link_libraries(tests PRIVATE ${CMAKE_PROJECT_NAME})
 
 include(CTest)
 include(Catch)
