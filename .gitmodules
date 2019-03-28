@@ -1,0 +1,3 @@
+[submodule "sxy-database"]
+	path = sxy-database
+	url = https://github.com/Chrinkus/sxy-database
