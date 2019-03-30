@@ -6,6 +6,10 @@ endif()
 
 project(birthday-data VERSION 0.0.1 LANGUAGES CXX)
 
+set(PROJECT_LINK_DIRECTORIES libsxy-database.so)
+link_directories(~/dev/lib)
+include_directories(~/dev/include)
+
 include_directories(include)
 
 add_subdirectory(src)

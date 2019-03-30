@@ -4,6 +4,7 @@
 TEST_CASE("Contacts construct as expected", "[Constructor]") {
     Contact c1;
 
+    REQUIRE(c1.id() == -1);
     REQUIRE(c1.first().empty() == true);
     REQUIRE(c1.last().empty() == true);
     REQUIRE(c1.birth().empty() == true);
@@ -12,6 +13,7 @@ TEST_CASE("Contacts construct as expected", "[Constructor]") {
 
     Contact c2 {"Chris", "Schick", "1979-Feb-27"};
 
+    REQUIRE(c2.id() == -1);
     REQUIRE(c2.first() == "Chris");
     REQUIRE(c2.last() == "Schick");
     REQUIRE(c2.birth() == "1979-Feb-27");
