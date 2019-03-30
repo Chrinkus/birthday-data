@@ -11,6 +11,4 @@ include_directories(include)
 add_subdirectory(src)
 add_subdirectory(test)
 
-add_subdirectory(sxy-database)
-
 enable_testing()
